@@ -1,0 +1,41 @@
+{{#each productos}}
+  <a href='#' class='card'>
+    <article class='card__article'>
+      <div class='card__image-container'>
+        <img src='{{foto}}' alt='{{nombre}}' class='card__image' />
+      </div>
+      <div class='card__content'>
+        <div class='card__description'>
+          <div class='card__title'>
+            <h2 class='card__title-content text-black'>
+              {{nombre}}
+            </h2>
+            <p class='card__title-subtitle text-muted'>
+              {{descripcion}}
+            </p>
+          </div>
+          <h3 class='card__price'>${{precio}}</h3>
+        </div>
+        <div class='card__footer'>
+          <p class='card__footer-letter mr-5'>Y</p>
+          <div class='card__footer-box'>
+            <div class='card__footer-box-btn-fav circle-sm active'>
+              <span class='material-symbols-outlined text-20 text-white'>
+                kid_star
+              </span>
+            </div>
+            <div class='card__footer-box-btn-addCart circle-sm active'>
+              <span class='material-symbols-outlined text-20 text-white'>
+                add_shopping_cart
+              </span>
+              <span class='material-symbols-outlined text-24 text-white'>
+                Check
+              </span>
+            </div>
+          </div>
+          <p class='card__footer-letter ml-5'>A</p>
+        </div>
+      </div>
+    </article>
+  </a>
+{{/each}}

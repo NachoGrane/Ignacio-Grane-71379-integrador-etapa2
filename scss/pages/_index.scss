@@ -1,0 +1,19 @@
+.section-cards {
+  background-color: var(--bg-body-main);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 2.5rem;
+  @media (max-width: 768px) {
+    & {
+      gap: 1.5rem;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

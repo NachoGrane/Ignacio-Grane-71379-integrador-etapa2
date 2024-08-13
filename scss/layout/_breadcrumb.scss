@@ -1,0 +1,32 @@
+.main {
+  &__breadcrumb {
+    a {
+      text-decoration: none;
+      color: var(--bs-text-main);
+      margin: 0px;
+    }
+    &-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      font-size: 1rem;
+      &-item {
+        text-decoration: underline !important;
+      }
+      @media (max-width: 768px) {
+        & {
+          font-size: 0.7rem;
+          padding-left: 10px;
+        }
+      }
+      &-icon {
+        @media (max-width: 768px) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

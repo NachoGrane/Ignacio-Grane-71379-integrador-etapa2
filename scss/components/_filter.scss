@@ -1,0 +1,51 @@
+.main {
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      & > p {
+        display: none;
+      }
+    }
+    &-button {
+      text-decoration: none;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      width: 24px;
+      line-height: 24px;
+      background-color: var(--bs-secondary);
+      border-radius: 100%;
+      &:hover {
+        background-color: var(--bs-secondary-accent);
+      }
+      & > span {
+        font-size: 20px;
+        color: #fff;
+      }
+      @media (min-width: 768px) {
+        & {
+          margin-left: 10px;
+        }
+      }
+      @media (max-width: 768px) {
+        & {
+          height: 20px;
+          width: 20px;
+          line-height: 20px;
+          margin-right: 20px;
+        }
+        & > span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

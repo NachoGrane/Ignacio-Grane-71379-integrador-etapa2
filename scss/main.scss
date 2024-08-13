@@ -1,0 +1,24 @@
+/* Estructura 7 en 1.
+  ! base -> _Todos los estilos de inicio. (_variables.scss, _reset.scss, _tipografías.scss)
+  ! components -> _buttons.scss, _slider.scss, _cards.scss
+  ! layout -> _distintas partes de una página. _header.scss, _footer.scss, _sidebar.scss
+  ! pages  -> _estilos particulares de una página. home.scss, contacto.scss, etc.
+  ! themes -> _temas de la pagina. _theme-dark.scss, _theme-light.scss
+  ! utils -> _mixins.scss, _functions.scss, variables especificas también...
+  ! vendors -> _librerías. _bootstrap.scss, _normalize.scss
+
+*/
+
+@import 'base/typography';
+@import 'base/variables';
+@import 'base/resets';
+@import 'components/cards';
+@import 'components/filter';
+@import 'components/input';
+@import 'components/button';
+@import 'layout/header';
+@import 'layout/breadcrumb';
+@import 'layout/footer';
+@import 'pages/index';
+@import 'pages/contacto';
+@import 'pages/nosotros';

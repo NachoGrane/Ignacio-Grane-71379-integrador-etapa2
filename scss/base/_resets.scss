@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body-main);
+  padding-left: 210px;
+  padding-right: 210px;
+  @media (max-width: 1540px) {
+    & {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+main {
+  min-height: 750px;
+}
